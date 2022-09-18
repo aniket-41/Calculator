@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <div class="calculator">
+
+        <input type="text" name="screen" id="Screen">
+        <table>
+            <tr>
+                <td><button value="(" onclick="typ(this.value)">)</button></td>
+                <td><button value="(" onclick="typ(this.value)">(</button></td>
+                <td><button onclick="clr()" >C</button></td>
+                <td><button value="%" onclick="typ(this.value)">%</button></td>
+            </tr>
+            <tr>
+                <td><button value="7" onclick="typ(this.value)">7</button></td>
+                <td><button value="8" onclick="typ(this.value)">8</button></td>
+                <td><button value="9" onclick="typ(this.value)">9</button></td>
+                <td><button value="*" onclick="typ(this.value)">X</button></td>
+            </tr>
+            <tr>
+                <td><button value="4" onclick="typ(this.value)">4</button></td>
+                <td><button value="5" onclick="typ(this.value)">5</button></td>
+                <td><button value="6" onclick="typ(this.value)">6</button></td>
+                <td><button value="-" onclick="typ(this.value)">-</button></td>
+            </tr>
+            <tr>
+                <td><button value="1" onclick="typ(this.value)">1</button></td>
+                <td><button value="2" onclick="typ(this.value)">2</button></td>
+                <td><button value="3" onclick="typ(this.value)">3</button></td>
+                <td><button value="+" onclick="typ(this.value)">+</button></td>
+            </tr>
+            <tr>
+                <td><button value="0" onclick="typ(this.value)">0</button></td>
+                <td><button value="." onclick="typ(this.value)">.</button></td>
+                <td><button value="/" onclick="typ(this.value)">/</button></td>
+                <td><button onclick="ans()" id="evaluate">=</button></td>
+            </tr>
+        </table>
+        </div>
+    </div>
+    
+    
+    
+</body>
+<script src="script.js"></script>
+</html>
